@@ -1,14 +1,15 @@
 import React from "react";
 import "./Login.css";
+import "animate.css";
 
 function Login() {
   return (
-    <div className="container ">
+    <div className="container animate__animated animate__fadeInRight">
       <div className="row">
         <div className="col-lg-3 col-md-2" />
         <div className="col-lg-6 col-md-8 login-box">
           <div className="col-lg-12 login-key">
-            <i className="fa-light fa-lock-open" aria-hidden="true" />
+            <i className="fa fa-key" aria-hidden="true" />
           </div>
           <div className="col-lg-12 login-title">ADMIN LOGIN</div>
           <div className="col-lg-12 login-form">
@@ -42,6 +43,7 @@ function Login() {
           <div className="col-lg-3 col-md-2" />
         </div>
       </div>
+      <h1 class="animate__animated animate__fadeInLeft">An animated element</h1>
     </div>
   );
 }
