@@ -22,7 +22,7 @@ const employeeData = [
   {
     id: 1,
     name: "Esther Howard",
-    position: "Sale's manager USA",
+    position: "Tamil Nadu Sports Agency",
     transactions: 3490,
     rise: true,
     tasksCompleted: 3,
@@ -32,7 +32,7 @@ const employeeData = [
   {
     id: 2,
     name: "Eleanor Pena",
-    position: "Sale's manager Europe",
+    position: "Odisha BasketBall Organisation",
     transactions: 590,
     rise: false,
     tasksCompleted: 5,
@@ -42,7 +42,25 @@ const employeeData = [
   {
     id: 3,
     name: "Robert Fox",
-    position: "Sale's manager Asia",
+    position: "IMG-Reliance",
+    transactions: 2600,
+    rise: true,
+    tasksCompleted: 5,
+    imgId: 3,
+  },
+  {
+    id: 3,
+    name: "Robert Fox",
+    position: "Sporty Solutionz",
+    transactions: 2600,
+    rise: true,
+    tasksCompleted: 2,
+    imgId: 3,
+  },
+  {
+    id: 3,
+    name: "Robert Fox",
+    position: "Baseline Ventures",
     transactions: 2600,
     rise: true,
     tasksCompleted: 1,
@@ -51,7 +69,7 @@ const employeeData = [
   {
     id: 3,
     name: "Robert Fox",
-    position: "Sale's manager Asia",
+    position: "Rhiti Sports",
     transactions: 2600,
     rise: true,
     tasksCompleted: 1,
@@ -60,7 +78,7 @@ const employeeData = [
   {
     id: 3,
     name: "Robert Fox",
-    position: "Sale's manager Asia",
+    position: "PSportz Village",
     transactions: 2600,
     rise: true,
     tasksCompleted: 1,
@@ -69,25 +87,7 @@ const employeeData = [
   {
     id: 3,
     name: "Robert Fox",
-    position: "Sale's manager Asia",
-    transactions: 2600,
-    rise: true,
-    tasksCompleted: 1,
-    imgId: 3,
-  },
-  {
-    id: 3,
-    name: "Robert Fox",
-    position: "Sale's manager Asia",
-    transactions: 2600,
-    rise: true,
-    tasksCompleted: 1,
-    imgId: 3,
-  },
-  {
-    id: 3,
-    name: "Robert Fox",
-    position: "Sale's manager Asia",
+    position: "JSW Sports",
     transactions: 2600,
     rise: true,
     tasksCompleted: 1,
@@ -96,16 +96,16 @@ const employeeData = [
 ];
 
 const Countrydata = [
-  { name: "USA", rise: true, value: 21942.83, id: 1 },
-  { name: "Ireland", rise: false, value: 19710.0, id: 2 },
-  { name: "Ukraine", rise: false, value: 12320.3, id: 3 },
-  { name: "Sweden", rise: true, value: 9725.0, id: 4 },
+  { name: "Football", rise: true, value: 21942.83, id: 1 },
+  { name: "BasketBall", rise: false, value: 19710.0, id: 2 },
+  { name: "Hockey", rise: false, value: 12320.3, id: 3 },
+  { name: "Cricket", rise: true, value: 9725.0, id: 4 },
 ];
 const segmentationData = [
   { c1: "Not Specified", c2: "800", c3: "#363636", color: "#535353" },
-  { c1: "Male", c2: "441", c3: "#818bb1", color: "#595f77" },
-  { c1: "Female", c2: "233", c3: "#2c365d", color: "#232942" },
-  { c1: "Other", c2: "126", c3: "#334ed8", color: "#2c3051" },
+  { c1: "State Government", c2: "441", c3: "#818bb1", color: "#595f77" },
+  { c1: "Central Government", c2: "233", c3: "#2c365d", color: "#232942" },
+  { c1: "Local Bodies", c2: "126", c3: "#334ed8", color: "#2c3051" },
 ];
 
 const sidebarItems = [
@@ -480,7 +480,7 @@ function NameCard({
             </div>
           </div>
 
-          <div className="text-sm  mt-2">{`${tasksCompleted} from 5 tasks completed`}</div>
+          <div className="text-sm  mt-2">{`${tasksCompleted} from 5 Application Steps Completed`}</div>
           <svg
             className="w-44 mt-3"
             height="6"
