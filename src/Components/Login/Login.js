@@ -32,7 +32,7 @@ function Login() {
                 </span>
               </div>
               <input
-                type="text"
+                type="password"
                 className="form-control"
                 placeholder="Password"
               />
@@ -40,6 +40,7 @@ function Login() {
             <button type="button" className="btn btn-secondary btn-block">
               LOGIN
             </button>
+
             <div className="message">
               <div>
                 <a href="#">Forgot your password</a>

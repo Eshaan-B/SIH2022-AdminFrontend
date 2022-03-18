@@ -11,12 +11,17 @@ import {
   ResponsiveContainer,
 } from "recharts";
 import "./Dashboard.css";
+import axios from "../Axios/axios";
 
 const map = (value, sMin, sMax, dMin, dMax) => {
   return dMin + ((value - sMin) / (sMax - sMin)) * (dMax - dMin);
 };
 const pi = Math.PI;
 const tau = 2 * pi;
+
+axios
+  .get("http://192.168.195.84:8000/api/users/getAllUsers")
+  .then((response) => console.log(response.data));
 
 const employeeData = [
   {
@@ -521,9 +526,9 @@ function NameCard({
               "text-lg"
             )}
           >
-            {transactions.interpolate((i) => `$${i.toFixed(2)}`)}
+            {transactions.interpolate((i) => `${i.toFixed(2)} Bid`)}
           </animated.div>
-          <div className="text-sm ">Last 6 month</div>
+          <div className="text-sm ">3 days Ago </div>
         </div>
       </div>
     </div>
@@ -607,7 +612,7 @@ function TopCountries() {
   return (
     <div className="flex p-4 flex-col h-full">
       <div className="flex justify-between items-center">
-        <div className="text-white font-bold">Top Countries</div>
+        <div className="text-white font-bold">Top Sports</div>
         <Icon path="res-react-dash-plus" className="w-5 h-5" />
       </div>
       <div className="">favourites</div>

@@ -5,6 +5,9 @@ body {
   color: #676767 !important;
   background-color: #1e1e1e !important;
 }
+body::-webkit-scrollbar {
+  display: none !important;
+}
 
 .bg-card {
   background-color: #171717;
